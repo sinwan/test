@@ -301,18 +301,6 @@
     </div><!-- End Clients Section -->
   </div>
 
-  <h2>Send e-mail to someone@example.com:</h2>
-
-  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-  Name:<br>
-  <input type="text" name="name"><br>
-  E-mail:<br>
-  <input type="text" name="mail"><br>
-  Comment:<br>
-  <input type="text" name="comment" size="50"><br><br>
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-  </form>
     <!-- ======= Contact Section ======= -->
     <div class="site-section contact" id="contact">
       <div class="container" data-aos="fade-up">
@@ -349,7 +337,13 @@
 
         </div>
 
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
 
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14423.673668508842!2d55.3896787!3d25.3405185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9777e08598b4e1d!2sEckhart%20Gulf%20Pharm%20%26%20Medical%20Equipment%20Store!5e0!3m2!1sen!2sus!4v1597647302375!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
             <form action="mailto:someone@example.com" method="post" enctype="text/plain">
               Name:<br>
               <input type="text" name="name"><br>
@@ -360,11 +354,29 @@
               <input type="submit" value="Send">
               <input type="reset" value="Reset">
               </form>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14423.673668508842!2d55.3896787!3d25.3405185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9777e08598b4e1d!2sEckhart%20Gulf%20Pharm%20%26%20Medical%20Equipment%20Store!5e0!3m2!1sen!2sus!4v1597647302375!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen></iframe>
+            <form action="mailto:eckhart@eim.ae" role="form" method="POST" class="php-email-form" enctype="text/plain">
+              <div class="form-row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="mail" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group text-center"><button type="submit" value="Send">Send Message</button></div>
+            </form>
           </div>
+
         </div>
       </div>
     </div><!-- End Contact Section -->
