@@ -12,18 +12,34 @@
   </head>
   <body>
     <form>
-      <input id="message" />
+      <div>
+        <label for="name">Name:
+          <input id="name"type="text" name="name" id="name" />
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+          <input id="email" type="text" name="email" id="email" />
+        </label>
+      </div>
+      <div>
+        <label>Comments:</label>
+        <br />
+        <textarea id="comments" name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+      </div>
+      <div>
+        <button>mailto</button>
+      </div>
     </form>
-    <button>mailto</button>
 
     <a href="mailto:customer@email.com?subject=Information
     Requested&body=Here's more information. 
     http://www.website.com/info/info.pdf">Send More Info</a>
 
     <script>
-        var body_message = $('#message').value;
-        var email = 'james2doyle@gmail.com';
-        var subject = 'js email';
+        var body_message = $('#comments').value;
+        var email = $('#email').value;
+        var subject = $('#name').value;
         $('button').click(function() {
 
             var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
