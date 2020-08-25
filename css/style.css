@@ -80,6 +80,13 @@ a {
       border: 1px solid #ff8000;
       color: #fff; }
 
+.form-control {
+  height: 43px; }
+  .form-control:active, .form-control:focus {
+    border-color: #1B5E20; }
+  .form-control:hover, .form-control:active, .form-control:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
     .section-title {
       text-align: center;
       padding-bottom: 30px;
