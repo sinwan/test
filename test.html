@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>Send e-mail to someone@example.com:</h2>
-
-<form action="mailto:customer@email.com?subject=Information
-Requested&body=Here's more information. 
-http://www.website.com/info/info.pdf method="post" enctype="text/plain">
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
-
-</body>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Give Feedback to Our Website.</h2>
+    <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+      <div>
+        <label for="name">Name:
+          <input type="text" name="name" id="name" />
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+          <input type="text" name="email" id="email" />
+        </label>
+      </div>
+      <div>
+        <label>Comments:</label>
+        <br />
+        <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+      </div>
+      <div>
+        <input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </div>
+    </form>
+  </body>
 </html>
