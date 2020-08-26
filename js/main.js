@@ -295,6 +295,7 @@ jQuery(document).ready(function($) {
     var name = document.getElementById("name").value;
     var subject = document.getElementById("subject").value;
 		var body_message = document.getElementById("message").value;
+		var email = "eckhart@eim.ae";
 
 		var mailto_link = 'mailto:' + email + '?subject=' +
 											subject + '&body= Hi, I am '+name +
