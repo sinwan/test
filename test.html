@@ -37,10 +37,10 @@
     http://www.website.com/info/info.pdf">Send More Info</a>
 
     <script>
+        $('button').click(function() {
         var body_message = document.getElementById("comments").value;
         var email = $('#email').value;
         var subject = document.getElementById("name").value;
-        $('button').click(function() {
 
             var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
 
