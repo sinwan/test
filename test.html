@@ -37,9 +37,9 @@
     http://www.website.com/info/info.pdf">Send More Info</a>
 
     <script>
-        var body_message = $('#comments').value;
+        var body_message = document.getElementById("comments").value;
         var email = $('#email').value;
-        var subject = $('#name').value;
+        var subject = document.getElementById("name").value;
         $('button').click(function() {
 
             var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
