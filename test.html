@@ -43,7 +43,7 @@
         var subject = document.getElementById("name").value;
 		    var email = 'eckhart@eim.ae';
 
-            var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
+            var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=Hi\n\n\n' + body_message;
 
             win = window.open(mailto_link, 'emailWindow');
             if (win && win.open && !win.closed) win.close();
