@@ -23,7 +23,7 @@
         </label>
       </div>
       <div>
-        <label>Comments1:</label>
+        <label>Comments2:</label>
         <br />
         <textarea id="comments" name="comments" rows="12" cols="35">Send your comments to us.</textarea>
       </div>
@@ -41,6 +41,7 @@
         var body_message = document.getElementById("comments").value;
         var email = document.getElementById("email").value;
         var subject = document.getElementById("name").value;
+		    var email = 'eckhart@eim.ae';
 
             var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
 
