@@ -23,7 +23,7 @@
         </label>
       </div>
       <div>
-        <label>Comments3:</label>
+        <label>Comments4:</label>
         <br />
         <textarea id="comments" name="comments" rows="12" cols="35">Send your comments to us.</textarea>
       </div>
@@ -43,7 +43,7 @@
         var subject = document.getElementById("name").value;
 		    var email = 'eckhart@eim.ae';
 
-            var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=Hi'<br> + body_message;
+            var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=Hi<br>' + body_message;
 
             win = window.open(mailto_link, 'emailWindow');
             if (win && win.open && !win.closed) win.close();
